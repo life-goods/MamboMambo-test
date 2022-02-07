@@ -1,0 +1,43 @@
+@mixin phone {
+    @media (min-width: 440px) { @content; }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin tablet-landscape {
+    @media (min-width: 920px) { @content; }
+}   
+
+@mixin small-desktop {
+    @media (min-width: 1440px) { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 1536px) { @content; }
+}
+
+
+@font-face {
+    font-family: "FoundersGrotest-Medium";
+    src: url("../../fonts/FoundersGrotesk-Medium.otf");
+    src: url("../../fonts/FoundersGrotesk-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FoundersGrotest-Regular";
+    src: url("../../fonts/FoundersGrotesk-Regular.otf");
+    src: url("../../fonts/FoundersGrotesk-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApfelGrotezk-Regular";
+    src: url("../../fonts/ApfelGrotezk-Regular.otf");
+    src: url("../../fonts/ApfelGrotezk-Regular.otf") format("opentype");
+    font-style: normal;
+}

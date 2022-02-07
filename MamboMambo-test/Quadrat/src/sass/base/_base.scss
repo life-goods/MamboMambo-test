@@ -1,0 +1,18 @@
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $white;
+    color: $black;
+    font-size: 1.6rem;
+    font-family: $founders-regular-font;
+    line-height: $defautl-line;
+}
+
+.container {
+    max-width: 144rem;
+    width: 90%;
+    margin: 0 auto;
+}

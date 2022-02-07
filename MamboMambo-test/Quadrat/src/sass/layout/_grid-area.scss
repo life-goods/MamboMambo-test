@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-areas:
+    // 'one one two'
+    // 'three four four five';
+    gap: 1em;
+    width: 100%;
+}
+
+//Deuxieme essaies avec le template areas et les nth-child
+
+// .grid:nth-child(1) {
+//     grid-area: one;
+// }
+
+// .grid:nth-child(2) {
+//     grid-area: two;
+// }
+
+// .grid:nth-child(3) {
+//     grid-area: three;
+// }
+
+// .grid:nth-child(4) {
+//     grid-area: four;
+// }
+// .grid:nth-child(5) {
+//     grid-area: five;
+// }

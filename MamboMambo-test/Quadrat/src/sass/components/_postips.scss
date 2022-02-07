@@ -1,0 +1,68 @@
+.postips {
+    width: 55rem;
+    height: 55rem;
+    border: 1px solid $light-gray;
+    padding: 3rem;
+    color: $dark-gray;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+
+    &__active {
+        background-color: $blue;
+        border: none;
+        color: $black;
+        transition: all .5s ease-in-out;
+        z-index: 1000;
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__title {
+        margin: 0 0 2rem 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    &__content {
+        margin: 0 0 5rem 0;
+    }
+
+    &__button {
+        margin: 40% 0 0;
+    }
+}
+// Premier essaie avec des IDs
+// #01 {
+//     top: 0%;
+//     left: 0%;
+// }
+
+// #02 {
+//     top: 25%;
+//     left: 35%;
+// }
+
+// #03 {
+//     top: 35%;
+//     left: 15%;
+// }
+
+// #04 {
+//     top: 50%;
+//     left: 0%;
+// }
+
+// #05 {
+//     top: 50%;
+//     left: 50%;
+// }

@@ -1,0 +1,43 @@
+.btn {
+    cursor: pointer;
+    margin-left: 2rem;
+
+    &__line::before,
+    &__line::after {
+        content:'';
+        position: absolute;
+        width: 13px;
+        border: 0.8px solid $primary;
+        transition: all .6s ease-in-out;
+    }
+
+    &__line::before {
+        transform: translate(-20px, 7px);
+        transition: all .6s ease-in-out;
+    }
+
+    &__line::after {
+        transform: translate(-20px, 2px);
+        transition: all .6s ease-in-out;
+    }
+
+    &__close::before,
+    &__close::after {
+        content:'';
+        position: absolute;
+        width: 13px;
+        border: 0.8px solid $primary;
+        transition: all .5s ease-in-out;
+    }
+
+    &__close::before {
+        transform: translate(-20px, 4px) rotate(-45deg);
+        transition: all .6s ease-in-out;
+    }
+
+    &__close::after {
+        transform: translate(-20px, 4px) rotate(45deg);
+        transition: all .4s ease-in-out;
+    }
+}
+

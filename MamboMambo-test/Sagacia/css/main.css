@@ -1,0 +1,253 @@
+/* Abstracts */
+@font-face {
+  font-family: "FoundersGrotest-Medium";
+  src: url("../fonts/FoundersGrotesk-Medium.otf");
+  src: url("../fonts/FoundersGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "FoundersGrotest-Regular";
+  src: url("../fonts/FoundersGrotesk-Regular.otf");
+  src: url("../fonts/FoundersGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Gascogne-Light";
+  src: url("../fonts/Gascogne-Light.ttf");
+  src: url("../fonts/Gascogne-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+/* Mixins */
+/* Colors */
+/* Font */
+/* Font-Size */
+/* Line Height */
+/* Variables */
+/* Base */
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%; }
+
+body {
+  background-color: #F9EFE6;
+  margin: 0 auto;
+  color: #442D2D;
+  font-size: 1.6rem;
+  font-family: "FoundersGrotest-Regular";
+  line-height: 1.68rem; }
+
+.container {
+  width: 100%;
+  max-width: 132rem;
+  margin: 0 auto; }
+
+/* Body base */
+h1 {
+  font-family: "Gascogne-Light";
+  font-size: 6rem;
+  line-height: 8rem; }
+
+.h1-other {
+  font-family: "FoundersGrotest-Regular";
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "FoundersGrotest-Medium";
+  font-size: 1.4rem;
+  line-height: 1.68rem;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #442D2D;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
+/* Fonts n Font Class */
+/*** The new CSS Reset - version 1.4.4 (last updated 22.12.2021) ***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert; }
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none; }
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%; }
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse; }
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert; }
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none; }
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word; }
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Reset Css */
+/* Components */
+.btn {
+  cursor: pointer;
+  margin-left: 2rem; }
+  .btn__line::before, .btn__line::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    border: 0.8px solid #442D2D;
+    transition: all .6s ease-in-out; }
+  .btn__line::before {
+    transform: translate(-20px, 7px);
+    transition: all .6s ease-in-out; }
+  .btn__line::after {
+    transform: translate(-20px, 2px);
+    transition: all .6s ease-in-out; }
+  .btn__close::before, .btn__close::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    border: 0.8px solid #442D2D;
+    transition: all .5s ease-in-out; }
+  .btn__close::before {
+    transform: translate(-20px, 4px) rotate(-45deg);
+    transition: all .6s ease-in-out; }
+  .btn__close::after {
+    transform: translate(-20px, 4px) rotate(45deg);
+    transition: all .4s ease-in-out; }
+
+/* Button */
+/* Layout */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 13rem;
+  border-bottom: 1px solid #442D2D; }
+  @media (min-width: 920px) {
+    .nav {
+      justify-content: space-between; } }
+  .nav__logo {
+    width: 15%;
+    margin: 0 0 0 8rem; }
+    @media (min-width: 920px) {
+      .nav__logo {
+        width: 10%;
+        margin: 0 0 0 18rem; } }
+  .nav__show {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all .6s ease-in-out; }
+  .nav__content {
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    transition: all .6s ease-in-out; }
+
+/* Navigation Menu */
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+  @media (min-width: 920px) {
+    .content {
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row; } }
+  .content img {
+    width: 52rem;
+    height: 62.5rem;
+    object-fit: cover; }
+  .content__text {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0; }
+    @media (min-width: 920px) {
+      .content__text {
+        width: 30%;
+        margin: 0; } }
+  .content__title {
+    margin: 3rem 0; }
+  .content__link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%; }
+
+/* Content */
+
+/*# sourceMappingURL=main.css.map */

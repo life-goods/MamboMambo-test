@@ -1,0 +1,15 @@
+.button {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: $black;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    &::after {
+        content: "\2192";
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}

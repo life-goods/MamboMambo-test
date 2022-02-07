@@ -1,0 +1,32 @@
+h1 {
+    font-family: $gascogne-font;
+    font-size: $h1;
+    line-height: $title-line;
+}
+
+.h1-other {
+    font-family: $founders-regular-font;
+    font-size: $h1;
+    line-height: $other-line;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: $founders-medium-font;
+   font-size: $defautl-font;
+   line-height: $defautl-line;
+   text-transform: uppercase;
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: $primary;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
